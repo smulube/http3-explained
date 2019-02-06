@@ -25,11 +25,11 @@ connection. A red stream and a green stream:
 
 It becomes a TCP-based head of line block!
 
-As the packet loss rate increases, HTTP/2 performs less and less good. At 2%
-packet loss (which is a terrible network quality, mind you), tests have proven
-that HTTP/1 users are usually better off - because they typically have six TCP
-connections up to distribute the lost packet over so for each lost packet the
-other connections without loss can still continue.
+As the packet loss rate increases, the performance of HTTP/2 gets worse and 
+worse. At 2% packet loss (which is a terrible network quality, mind you), tests
+have proven that HTTP/1 users are usually better off - because they typically 
+have six TCP connections to distribute the lost packet over so for each lost 
+packet the other connections without loss can still continue.
 
 Fixing this issue is not easy, if at all possible, to do with TCP.
 
